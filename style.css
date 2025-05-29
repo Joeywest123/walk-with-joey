@@ -1,0 +1,86 @@
+/* Modern Purple Theme */
+:root {
+  --deep-purple: #5E35B1;
+  --vibrant-purple: #7C4DFF;
+  --soft-purple: #B388FF;
+  --light-accent: #D1C4E9;
+  --off-white: #F5F5F5;
+  --text-dark: #212121;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* Logo with purple gradient */
+.logo {
+  background: linear-gradient(135deg, var(--deep-purple), var(--vibrant-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+/* Sophisticated buttons */
+.btn {
+  background: var(--deep-purple);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background: var(--vibrant-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Elegant feature cards */
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--vibrant-purple);
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-section {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
